@@ -21,7 +21,7 @@ $ sim_timestep  output_timestep
   1.0e-5        1.0e-4
 *POWDER_BED_MODE
 $ numlayers  ncvlayer  layerheight  density  cpa     cpb     thcona     thconb
-  5          4         40e-6      7734    1e-6    435     0          11.4
+  5          4         40e-6        4330     0.2508  357.7   0          0.995
 $*VOLUMETRIC_HEAT_SOURCE_TABLE
 $./heatSourceParametersTable.k
 *VOLUMETRIC_HEAT_SOURCE
