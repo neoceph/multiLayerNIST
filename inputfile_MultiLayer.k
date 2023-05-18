@@ -22,14 +22,14 @@ $ sim_timestep  output_timestep
 *POWDER_BED_MODE
 $ numlayers  ncvlayer  layerheight  density  cpa     cpb     thcona     thconb
   5          4         40e-6        4330     0.2508  357.7   0          0.995
-$*VOLUMETRIC_HEAT_SOURCE_TABLE
-$./heatSourceParametersTable.k
+*VOLUMETRIC_HEAT_SOURCE_TABLE
+./heatSourceParametersTable.k
 *VOLUMETRIC_HEAT_SOURCE
 $ power   apowseta   heatthick  heatrb   factor
   300.0   0.3512     109.63e-6   31.71e-6     2
 *MATERIAL_PROPERTIES
 $ dens  denl   viscos  tsolid  tliquid  hsmelt  hlfriz
- 7734  7578   5.30e-3   1533    1609     2.86e6  1.49e6
+  8440  7640   0.007   1563    1623     861e3   1151e3
 $ acpa    acpb    acpl
   1e-6  435     755
 $ thconsa  thconsb   thconsc  thconla thconlb
