@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import math
 
 ############ method for estimating the time of the toolpath ############
 def estimateTimeForToolPaths(toolpaths, scanSpeed):
