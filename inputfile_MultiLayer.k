@@ -12,7 +12,8 @@ ambientPres  101.0e3
 gasConstant  8.314
 *SCALAR_OUT
 temp
-csfrac
+mpPhase
+mpLiqPhase
 *CONTROL_TERMINATION
 $ total_time  max_iter  nonlin_tolerance
  0.07972433   100       1.0e-6
@@ -21,7 +22,7 @@ $ sim_timestep  output_timestep
   1.0e-5        1.0e-4
 *POWDER_BED_MODE
 $ numlayers  ncvlayer  layerheight  density  cpa     cpb     thcona     thconb
-  5          4         40e-6        7734    1e-6    435     0          11.4
+  5          4         40e-6        7734     0.2508  357.7   0.25        9.5
 $*VOLUMETRIC_HEAT_SOURCE_TABLE
 $./heatSourceParametersTable.k
 *VOLUMETRIC_HEAT_SOURCE

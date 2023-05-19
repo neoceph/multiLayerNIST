@@ -80,10 +80,10 @@ with open("MultiLayerTest.crs", "w") as file:
         layerDepth = layerHeight*(i+1)
         scanTimeOffset = 5e-3*i
         scanTime = scanTime + scanTimeOffset
-        formattedLine = f"{scanTime:4.8f} {toolpath[0][2]+toolpathYOffset:4.8f} {toolpath[0][1]+toolpathXOffset:4.8f} {layerDepth:4.8f} {0}\n"
+        formattedLine = f"{scanTime:4.8f} {toolpath[0][2]+toolpathYOffset:4.8f} {toolpath[0][1]+toolpathXOffset:4.8f} {layerDepth:4.8f} {0} {1}\n"
         file.write(formattedLine)
         for time, x, y in toolpath[1:]:
             scanTime = scanTime + time
-            formattedLine = f"{scanTime:4.8f} {y+toolpathYOffset:4.8f} {x+toolpathXOffset:4.8f} {layerDepth:4.8f} {laserStatus}\n"
+            formattedLine = f"{scanTime:4.8f} {y+toolpathYOffset:4.8f} {x+toolpathXOffset:4.8f} {layerDepth:4.8f} {laserStatus}  {1}\n"
             file.write(formattedLine)
         
